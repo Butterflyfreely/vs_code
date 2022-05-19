@@ -72,8 +72,8 @@ int main(){
         }
         cout<<"END"<<endl;
     }
-
-
+ 
+    system("pause");
 
     return 0;
 }
