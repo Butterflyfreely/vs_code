@@ -24,7 +24,7 @@ public:
             id++;
         }
         string finnal=str.substr(id);
-        if(finnal<"0"||finnal>"255")return false;
+        if(finnal<"0"||finnal>"255"||id<str.size()-1)return false;
         else return true;        
     }
     
@@ -73,7 +73,7 @@ public:
 };
 
 int main() {
-    string str="2001:0db8:ffff:0:0:8A2E:0370:7334";//"2001:0db8:85a3:0:0:8A2E:0370:7334"   "172.01.254.1"
+    string str="2001:0db8:85a3:0:0:8A2E:0370:7334";//"2001:0db8:85a3:0:0:8A2E:0370:7334"   "172.01.254.1"
     Solution s1;
     cout<<s1.solve(str);
 
