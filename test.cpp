@@ -1,25 +1,41 @@
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <vector>
+#include <queue>
+#include<algorithm>
 using namespace std;
- 
-void test1()
-{
-	string s="helloworld";
-	
-	string s1=s.substr(0,1);
-	cout<<s1<<endl; 
 
-	
-	
-}
-void test2()
-{
-}
-int main()
-{
-	test1();
 
-  system("pause");
-	return 0;
- } 
- 
+// class Solution
+// {
+// public:
+//     static bool cmp(string a,string b)
+// {
+//     return a.size()<b.size();
+// }
+
+
+//     vector<string> aaa(vector<string>& kk)
+//     {
+//         sort(kk.begin(),kk.end(),cmp);
+
+//     }
+// };
+
+int main() {
+    // vector<string> vec={"abca","abc","abca","abc","abcc"};
+    // Solution s1;
+    // s1.aaa(vec);
+    string IP="asdf.a";
+
+    int i=0;
+    while(IP[i]!='.')
+        {
+            i++;
+        }
+
+
+    int a=0;
+
+    //system("pause"); 
+    return 0;
+}

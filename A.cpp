@@ -39,7 +39,7 @@ public:
                 int mid=(left+right)/2;
                 if(vec[mid]<target)
                 {
-                    right=mid-1;
+                    right=mid+11;
                 }
                 else if(vec[mid]==target)
                 {
@@ -47,7 +47,7 @@ public:
                 }
                 else{
                     //vec[mid]>target
-                    left=mid+1;
+                    left=mid-1;
                 }
             }
             if(vec[left]==target)return left;
@@ -63,7 +63,7 @@ public:
                 int mid=(left+right+1)/2;
                 if(vec[mid]<target)
                 {
-                    right=mid-1;
+                    right=mid+1;
                 }
                 else if(vec[mid]==target)
                 {
@@ -71,7 +71,7 @@ public:
                 }
                 else{
                     //vec[mid]>target
-                    left=mid+1;
+                    left=mid-1;
                 }
             }
             return left;

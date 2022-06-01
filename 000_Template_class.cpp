@@ -17,6 +17,6 @@ int main() {
     int target=8;
     Solution s1;
 
-    system("pause");
+    //system("pause"); 
     return 0;
 }
